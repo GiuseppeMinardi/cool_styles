@@ -1,28 +1,28 @@
-font.size:    12.0
-axes.facecolor:     2D2A32
-axes.edgecolor:     EDF6F9
-axes.grid:          True
-axes.grid.which:    both
-axes.labelcolor: EDF6F9
-text.color:  EDF6F9
-axes.axisbelow:     True
-axes.spines.top:    False
-axes.spines.right:  False
-axes.prop_cycle: cycler('color', ['E29578', '83C5BE', 'FFDDD2', '14BDEB', '00ADBD'])
-xtick.color: EDF6F9
-ytick.color: EDF6F9
-grid.linestyle: dashed
-grid.alpha:     0.5
-legend.frameon:       True     # if True, draw the legend on a background patch
-legend.framealpha:    0.8      # legend patch transparency
-legend.fancybox:      True     # if True, use a rounded box for the
-figure.figsize:     9.71, 6  # figure size in inches
-figure.dpi:         150       # figure dots per inch
-figure.facecolor:   2D2A32
-figure.edgecolor:   EDF6F9
+font.size                    : 12.0
+axes.facecolor               : 2D2A32
+axes.edgecolor               : EDF6F9
+axes.grid                    : True
+axes.grid.which              : both
+axes.labelcolor              : EDF6F9
+text.color                   : EDF6F9
+axes.axisbelow               : True
+axes.spines.top              : False
+axes.spines.right            : False
+axes.prop_cycle              : cycler('color', ['E29578', '83C5BE', 'FFDDD2', '14BDEB', '00ADBD'])
+xtick.color                  : EDF6F9
+ytick.color                  : EDF6F9
+grid.linestyle               : dashed
+grid.alpha                   : 0.5
+legend.frameon               : True     # if True, draw the legend on a background patch
+legend.framealpha            : 0.8      # legend patch transparency
+legend.fancybox              : True     # if True, use a rounded box for the
+figure.figsize               : 9.71, 6  # figure size in inches
+figure.dpi                   : 150       # figure dots per inch
+figure.facecolor             : 2D2A32
+figure.edgecolor             : EDF6F9
 figure.constrained_layout.use: True
-image.cmap:   viridis              # A colormap name, gray etc...
-hist.bins: sqrt  # The default number of histogram bins or 'auto'.
-savefig.dpi:       300      # figure dots per inch or 'figure'
-savefig.format:    png         # {png, ps, pdf, svg}
-savefig.transparent: True
+image.cmap                   : viridis              # A colormap name, gray etc...
+hist.bins                    : sqrt  # The default number of histogram bins or 'auto'.
+savefig.dpi                  : 300      # figure dots per inch or 'figure'
+savefig.format               : png         # {png, ps, pdf, svg}
+savefig.transparent          : True
