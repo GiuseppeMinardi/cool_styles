@@ -1,17 +1,17 @@
-figure.facecolor             : f3f2ed
+
 axes.facecolor               : f3f2ed
-axes.edgecolor               : 333d29
-axes.labelcolor              : 333d29
-xtick.color                  : 333d29
-ytick.color                  : 333d29
-text.color                   : 333d29
+axes.edgecolor               : 023e8a
+axes.labelcolor              : 023e8a
+xtick.color                  : 023e8a
+ytick.color                  : 023e8a
+text.color                   : 023e8a
 
 grid.color                   : d8d8cc
 grid.linestyle               : -
 grid.linewidth               : 0.5
 axes.grid                    : True
 
-axes.prop_cycle              : cycler('color', ['7f4f24', '936639', 'a4ac86', '656d4a', '414833'])
+axes.prop_cycle              : cycler('color', ['023e8a', '0077b6', '0096c7', '00b4d8', '48cae4'])
 
 font.family                  : sans-serif
 font.sans-serif              : Arial, Helvetica, DejaVu Sans
@@ -21,8 +21,8 @@ legend.frameon               : False
 legend.loc                   : best
 
 lines.linewidth              : 2
-savefig.facecolor            : f3f2ed
-savefig.edgecolor            : f3f2ed
+savefig.facecolor            : CAF0F8
+savefig.edgecolor            : CAF0F8
 savefig.format               : png
 savefig.dpi                  : 300
 savefig.transparent          : False

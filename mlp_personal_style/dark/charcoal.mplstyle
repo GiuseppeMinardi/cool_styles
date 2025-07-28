@@ -13,3 +13,4 @@ figure.constrained_layout.use: True
 image.cmap:   viridis              # A colormap name, gray etc...
 hist.bins: 20  # The default number of histogram bins or 'auto'.
 savefig.format:    png         # {png, ps, pdf, svg}
+savefig.transparent          : False
