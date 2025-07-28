@@ -32,7 +32,7 @@ def plot_data(data, stylepath: Path, stylename: str):
         )
 
         # Add main title
-        fig.suptitle(f"{stylename} light", fontsize=14, fontweight="normal", y=0.95)
+        fig.suptitle(f"{stylename} style")
 
         # Subplot 1: Scatter plot
         ax1 = fig.add_subplot(gs[0])
@@ -68,14 +68,12 @@ def plot_data(data, stylepath: Path, stylename: str):
         ax2.hist(data["histogram"]["hist3"], bins=25, alpha=0.8, density=True)
 
         # Add annotation box and arrow
-        bbox_props = dict(boxstyle="round,pad=0.3", facecolor="lightblue", alpha=0.8)
         ax2.annotate(
             "Annotation",
             xy=(0.7, 7),
             xytext=(0.5, 9),
-            bbox=bbox_props,
             fontsize=9,
-            arrowprops=dict(arrowstyle="->", color="black", lw=1),
+            arrowprops=dict(arrowstyle="->", color="C2", lw=1),
         )
 
         ax2.set_xlim(0, 1)
