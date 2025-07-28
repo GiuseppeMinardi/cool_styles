@@ -1,16 +1,4 @@
-"""
-MLPPersonalStyle - Simple Matplotlib Style Package
+from .dark import available_styles as dark_styles
+from .light import avaiable_styles as light_styles
 
-This package provides custom matplotlib styles that can be easily imported and used.
-
-Example:
-    from matplotlib import pyplot as plt
-    from mlp_personal_style import light, dark
-    
-    plt.style.use(light.incredible_style)
-"""
-
-from . import light
-from . import dark
-
-__version__ = "0.1.0"
+avaiable_styles = {**light_styles, **dark_styles}

@@ -1,0 +1,34 @@
+figure.facecolor             : 1f1f1c
+axes.facecolor               : 1f1f1c
+axes.edgecolor               : c2c5aa
+axes.labelcolor              : c2c5aa
+xtick.color                  : c2c5aa
+ytick.color                  : c2c5aa
+text.color                   : c2c5aa
+
+grid.color                   : 414833
+grid.linestyle               : -
+grid.linewidth               : 0.5
+axes.grid                    : True
+
+axes.prop_cycle              : cycler('color', ['a68a64', 'b6ad90', 'c2c5aa', 'a4ac86', '936639'])
+
+font.family                  : sans-serif
+font.sans-serif              : Arial, Helvetica, DejaVu Sans
+font.size                    : 10
+
+legend.frameon               : False
+legend.loc                   : best
+
+lines.linewidth              : 2
+savefig.facecolor            : f3f2ed
+savefig.edgecolor            : f3f2ed
+savefig.format               : png
+savefig.dpi                  : 300
+
+legend.fancybox              : True
+figure.figsize               : 9.71, 6
+figure.dpi                   : 150
+figure.constrained_layout.use: True
+image.cmap                   : viridis
+hist.bins                    : sqrt

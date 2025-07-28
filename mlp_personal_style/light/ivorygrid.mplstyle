@@ -22,7 +22,7 @@ figure.facecolor:   2D2A32
 figure.edgecolor:   EDF6F9
 figure.constrained_layout.use: True
 image.cmap:   viridis              # A colormap name, gray etc...
-hist.bins: 20  # The default number of histogram bins or 'auto'.
+hist.bins: sqrt  # The default number of histogram bins or 'auto'.
 savefig.dpi:       300      # figure dots per inch or 'figure'
 savefig.format:    png         # {png, ps, pdf, svg}
 savefig.transparent: True

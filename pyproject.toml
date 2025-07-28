@@ -7,7 +7,7 @@ name = "mlp_personal_style"
 version = "0.1.0"
 description = "Simple matplotlib styles with direct style imports"
 authors = [
-    {name = "GiuseppeMinardi", email = "author@example.com"},
+    {name = "GiuseppeMinardi", email = "giuseppe.minardi95@gmail.com"},
 ]
 readme = "README.md"
 license = {file = "LICENSE"}
@@ -15,10 +15,6 @@ requires-python = ">=3.7"
 dependencies = [
     "matplotlib>=3.3.0",
 ]
-
-[project.urls]
-"Homepage" = "https://github.com/yourusername/mlp_personal_style"
-"Bug Tracker" = "https://github.com/yourusername/mlp_personal_style/issues"
 
 [tool.setuptools]
 packages = ["mlp_personal_style"]
