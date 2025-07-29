@@ -1,5 +1,4 @@
 
-axes.facecolor               : f3f2ed
 axes.edgecolor               : 023e8a
 axes.labelcolor              : 023e8a
 xtick.color                  : 023e8a
@@ -10,14 +9,15 @@ grid.color                   : d8d8cc
 grid.linestyle               : -
 grid.linewidth               : 0.5
 axes.grid                    : True
+grid.color                   : caf0f8
 
-axes.prop_cycle              : cycler('color', ['023e8a', '0077b6', '0096c7', '00b4d8', '48cae4'])
+axes.prop_cycle              : cycler('color', ['023e8a', '669bbc', '0096c7', '00b4d8', '48cae4'])
 
 font.family                  : sans-serif
 font.sans-serif              : Arial, Helvetica, DejaVu Sans
 font.size                    : 10
 
-legend.frameon               : False
+legend.frameon               : True
 legend.loc                   : best
 
 lines.linewidth              : 2
@@ -33,3 +33,6 @@ figure.dpi                   : 150
 figure.constrained_layout.use: True
 image.cmap                   : viridis
 hist.bins                    : sqrt
+axes.axisbelow               : True
+axes.spines.top              : False
+axes.spines.right            : False
