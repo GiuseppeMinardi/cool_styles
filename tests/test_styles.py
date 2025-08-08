@@ -181,3 +181,10 @@ def test_sealight_style():
     with plt.style.context(sealight):
         plot_figure(style_label="sealight")
         plt.savefig(img_path.joinpath("sealight.png"))
+
+def test_coastalarvest_style():
+    from cool_styles import coastalarvest
+
+    with plt.style.context(coastalarvest):
+        plot_figure(style_label="coastalarvest")
+        plt.savefig(img_path.joinpath("coastalarvest.png"))

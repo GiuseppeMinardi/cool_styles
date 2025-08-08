@@ -1,27 +1,60 @@
-axes.grid                    : True
-axes.grid.which              : both
-grid.linestyle               : dashed
-grid.alpha                   : 0.5
+# Ivory Grid matplotlib style
+# A dark theme with prominent grid lines and vibrant color accents
 
-font.size                    : 12.0
-axes.facecolor               : 2D2A32
-axes.edgecolor               : EDF6F9
-axes.labelcolor              : EDF6F9
-text.color                   : EDF6F9
-axes.axisbelow               : True
-axes.spines.top              : False
-axes.spines.right            : False
+# =============================================================================
+# FIGURE SETTINGS
+# =============================================================================
+figure.figsize               : 9.71, 6      # Golden ratio inspired proportions
+figure.dpi                   : 150          # High DPI for crisp rendering
+figure.constrained_layout.use: True         # Automatic layout optimization
+
+# =============================================================================
+# FONT AND TEXT SETTINGS
+# =============================================================================
+font.size                    : 12.0         # Base font size
+text.color                   : EDF6F9       # Light text color for readability
+
+# =============================================================================
+# AXES AND SPINES
+# =============================================================================
+axes.facecolor               : 2D2A32       # Dark background color
+axes.edgecolor               : EDF6F9       # Light edge color
+axes.labelcolor              : EDF6F9       # Light label color
+axes.axisbelow               : True         # Grid lines behind data
+axes.spines.top              : False        # Clean, minimal appearance
+axes.spines.right            : False        # Remove unnecessary chart junk
+xtick.color                  : EDF6F9       # Light tick color
+ytick.color                  : EDF6F9       # Light tick color
+
+# =============================================================================
+# COLOR PALETTE
+# =============================================================================
 axes.prop_cycle              : cycler('color', ['E29578', '83C5BE', 'FFDDD2', '14BDEB', '00ADBD'])
-xtick.color                  : EDF6F9
-ytick.color                  : EDF6F9
-legend.frameon               : True     # if True, draw the legend on a background patch
-legend.framealpha            : 0.8      # legend patch transparency
-legend.fancybox              : True     # if True, use a rounded box for the
-figure.figsize               : 9.71, 6  # figure size in inches
-figure.dpi                   : 150       # figure dots per inch
-figure.constrained_layout.use: True
-image.cmap                   : viridis              # A colormap name, gray etc...
-hist.bins                    : sqrt  # The default number of histogram bins or 'auto'.
-savefig.dpi                  : 300      # figure dots per inch or 'figure'
-savefig.format               : png         # {png, ps, pdf, svg}
-savefig.transparent          : True
+
+# =============================================================================
+# GRID SETTINGS
+# =============================================================================
+axes.grid                    : True         # Enable grid by default
+axes.grid.which              : both         # Show both major and minor gridlines
+grid.linestyle               : dashed       # Dashed gridlines
+grid.alpha                   : 0.5          # Semi-transparent gridlines
+
+# =============================================================================
+# LEGEND SETTINGS
+# =============================================================================
+legend.frameon               : True         # Draw legend on background patch
+legend.framealpha            : 0.8          # Legend patch transparency
+legend.fancybox              : True         # Rounded legend corners
+
+# =============================================================================
+# SPECIALIZED PLOT SETTINGS
+# =============================================================================
+image.cmap                   : viridis      # Default colormap for heatmaps/images
+hist.bins                    : sqrt         # Optimal bin calculation for histograms
+
+# =============================================================================
+# SAVE SETTINGS
+# =============================================================================
+savefig.dpi                  : 300          # High resolution for saved images
+savefig.format               : png          # High-quality default format
+savefig.transparent          : True         # Transparent background by default

@@ -1,5 +1,6 @@
-# Charcoal matplotlib style
-# A bold, modern style with high contrast and clean lines
+# Coastal Harvest matplotlib style
+# A warm, sophisticated color palette inspired by autumn harbors and coastal towns
+# Colors: Deep Navy, Burnt Orange, Golden Yellow, Sage Green, Teal Green
 
 # =============================================================================
 # FIGURE SETTINGS
@@ -9,9 +10,17 @@ figure.dpi                   : 150          # High DPI for crisp rendering
 figure.constrained_layout.use: True         # Automatic layout optimization
 
 # =============================================================================
-# FONT AND TEXT SETTINGS
+# FONT AND TEXT SETTINGS  
 # =============================================================================
 font.size                    : 12.0         # Base font size
+font.family                  : sans-serif   # Clean, modern font family
+font.sans-serif              : Inter, Helvetica, Arial, sans-serif  # Font stack with fallbacks
+text.color                   : 2a2a2a      # Softer than pure black for better readability
+axes.labelcolor              : 2a2a2a      # Consistent text color for labels
+axes.labelweight             : 500          # Slightly bolder axis labels for hierarchy
+axes.titleweight             : 600          # Bolder titles for clear hierarchy
+axes.labelpad                : 8            # Breathing room between labels and axes
+axes.titlepad                : 15           # More space above titles
 
 # =============================================================================
 # AXES AND SPINES
@@ -19,11 +28,20 @@ font.size                    : 12.0         # Base font size
 axes.axisbelow               : True         # Grid lines behind data
 axes.spines.top              : False        # Clean, minimal appearance
 axes.spines.right            : False        # Remove unnecessary chart junk
+axes.edgecolor               : 666666      # Softer edge color than harsh black
 
 # =============================================================================
 # COLOR PALETTE
 # =============================================================================
-axes.prop_cycle              : cycler('color', ['264653', 'FE5D26', '2A9D8F', '704C5E', 'E9C46A', '823329'])
+# Primary color cycle - optimized order for visual hierarchy
+# 1. Burnt Orange (attention-grabbing primary)
+# 2. Deep Navy (strong secondary) 
+# 3. Golden Yellow (warm accent)
+# 4. Sage Green (natural complement)
+# 5. Teal Green (sophisticated balance)
+# 6. Muted Purple (extended palette option)
+# 7. Warm Gray (neutral option)
+axes.prop_cycle              : cycler('color', ["fe7f2d","233d4d","fcca46","a1c181","619b8a","7b68ee","8d7053"])
 
 # =============================================================================
 # GRID SETTINGS
@@ -34,9 +52,18 @@ grid.linewidth               : 0.5          # Thin, unobtrusive lines
 grid.alpha                   : 0.5          # Semi-transparent for subtlety
 
 # =============================================================================
+# TICKS
+# =============================================================================
+xtick.major.pad              : 5            # Consistent padding for x-axis ticks
+ytick.major.pad              : 5            # Consistent padding for y-axis ticks
+xtick.color                  : 666666      # Softer tick color
+ytick.color                  : 666666      # Matches grid and edge colors
+
+# =============================================================================
 # LEGEND SETTINGS
 # =============================================================================
 legend.fancybox              : True         # Rounded legend corners
+legend.columnspacing         : 1.5          # Better spacing in multi-column legends
 
 # =============================================================================
 # SPECIALIZED PLOT SETTINGS
@@ -49,3 +76,4 @@ hist.bins                    : sqrt         # Optimal bin calculation for histog
 # =============================================================================
 savefig.format               : png          # High-quality default format
 savefig.transparent          : False        # Solid background by default
+savefig.dpi                  : 320          # Maximum resolution for saved images
