@@ -19,6 +19,3 @@ dependencies = [
 [tool.setuptools]
 packages = ["mlp_personal_style"]
 include-package-data = true
-
-[tool.setuptools.package-data]
-"mlp_personal_style.styles" = ["*.mplstyle"]
