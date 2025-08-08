@@ -13,3 +13,7 @@ dev = [
     "numpy>=2.3.2",
     "pytest>=8.4.1",
 ]
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
