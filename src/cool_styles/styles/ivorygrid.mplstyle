@@ -18,8 +18,6 @@ legend.framealpha            : 0.8      # legend patch transparency
 legend.fancybox              : True     # if True, use a rounded box for the
 figure.figsize               : 9.71, 6  # figure size in inches
 figure.dpi                   : 150       # figure dots per inch
-figure.facecolor             : 2D2A32
-figure.edgecolor             : EDF6F9
 figure.constrained_layout.use: True
 image.cmap                   : viridis              # A colormap name, gray etc...
 hist.bins                    : sqrt  # The default number of histogram bins or 'auto'.

@@ -57,7 +57,11 @@ convention = "numpy"
 "tests/**" = [
     "S101",
     "PLR2004",
-    "SLF001"
+    "SLF001",
+    "D401",
+    "D103",
+    "D100",
+    "B007",
 ]
 "scripts/**" = [
     "T201",

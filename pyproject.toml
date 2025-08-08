@@ -1,23 +1,15 @@
-[build-system]
-requires = ["setuptools>=42", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
-name = "mlp_personal_style"
+name = "cool_styles"
 version = "0.1.0"
-description = "Simple matplotlib styles with direct style imports"
-authors = [
-    {name = "GiuseppeMinardi", email = "giuseppe.minardi95@gmail.com"},
-]
+description = "A package contaiing a collection of cool matplotlib styles"
 readme = "README.md"
-license = {file = "LICENSE"}
-requires-python = ">=3.7"
+requires-python = ">=3.11"
 dependencies = [
-    "matplotlib>=3.3.0",
+    "matplotlib>=3.10.5",
 ]
 
 [dependency-groups]
 dev = [
-    "pytest>=7.4.4",
+    "numpy>=2.3.2",
+    "pytest>=8.4.1",
 ]
-

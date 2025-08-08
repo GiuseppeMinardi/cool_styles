@@ -1,6 +1,8 @@
 
 axes.edgecolor               : 023e8a
 axes.labelcolor              : 023e8a
+axes.spines.top              : False
+axes.spines.right            : False
 xtick.color                  : 023e8a
 ytick.color                  : 023e8a
 text.color                   : 023e8a
@@ -21,8 +23,6 @@ legend.frameon               : True
 legend.loc                   : best
 
 lines.linewidth              : 2
-savefig.facecolor            : CAF0F8
-savefig.edgecolor            : CAF0F8
 savefig.format               : png
 savefig.dpi                  : 300
 savefig.transparent          : False

@@ -2,6 +2,8 @@ figure.facecolor             : f3f2ed
 axes.facecolor               : f3f2ed
 axes.edgecolor               : 333d29
 axes.labelcolor              : 333d29
+axes.spines.top              : False
+axes.spines.right            : False
 xtick.color                  : 333d29
 ytick.color                  : 333d29
 text.color                   : 333d29
