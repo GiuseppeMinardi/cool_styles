@@ -5,7 +5,6 @@ import matplotlib
 matplotlib.use("Agg")  # prevents GUI windows during tests
 import matplotlib.pyplot as plt
 
-import matplotlib.colors as mcolors
 import numpy as np
 from matplotlib.patches import Rectangle
 
@@ -123,22 +122,11 @@ def plot_figure(style_label=""):
         ncols=6, nrows=1, num=style_label, figsize=(14.8, 2.8), layout="constrained"
     )
 
-    # make a suptitle, in the same style for all subfigures,
-    # except those with dark backgrounds, which get a lighter color:
-    background_color = mcolors.rgb_to_hsv(
-        mcolors.to_rgb(plt.rcParams["figure.facecolor"])
-    )[2]
-    if background_color < 0.5:
-        title_color = [0.8, 0.8, 1]
-    else:
-        title_color = np.array([19, 6, 84]) / 256
     fig.suptitle(
         style_label,
         x=0.01,
         ha="left",
-        color=title_color,
         fontsize=14,
-        fontfamily="DejaVu Sans",
         fontweight="normal",
     )
 

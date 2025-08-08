@@ -33,5 +33,5 @@ legend.fancybox              : True
 figure.figsize               : 9.71, 6
 figure.dpi                   : 150
 figure.constrained_layout.use: True
-image.cmap                   : viridis
+image.cmap                   : YlGn
 hist.bins                    : sqrt
