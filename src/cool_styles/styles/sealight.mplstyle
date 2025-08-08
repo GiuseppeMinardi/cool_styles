@@ -1,3 +1,8 @@
+grid.color                   : d8d8cc
+grid.linestyle               : -
+grid.linewidth               : 0.5
+axes.grid                    : True
+grid.color                   : caf0f8
 
 axes.edgecolor               : 023e8a
 axes.labelcolor              : 023e8a
@@ -6,12 +11,6 @@ axes.spines.right            : False
 xtick.color                  : 023e8a
 ytick.color                  : 023e8a
 text.color                   : 023e8a
-
-grid.color                   : d8d8cc
-grid.linestyle               : -
-grid.linewidth               : 0.5
-axes.grid                    : True
-grid.color                   : caf0f8
 
 axes.prop_cycle              : cycler('color', ['023e8a', '669bbc', '0096c7', '00b4d8', '48cae4'])
 
