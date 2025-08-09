@@ -182,6 +182,7 @@ def test_sealight_style():
         plot_figure(style_label="sealight")
         plt.savefig(img_path.joinpath("sealight.png"))
 
+
 def test_coastalarvest_style():
     from cool_styles import coastalarvest
 

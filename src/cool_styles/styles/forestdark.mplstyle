@@ -15,29 +15,29 @@ figure.facecolor             : 1f1f1c       # Dark background color
 font.family                  : sans-serif   # Clean, modern font family
 font.sans-serif              : Arial, Helvetica, DejaVu Sans
 font.size                    : 10           # Base font size
-text.color                   : 582f0e       # Forest brown text color
+text.color                   : c2c5aa       # Forest brown text color
 
 # =============================================================================
 # AXES AND SPINES
 # =============================================================================
 axes.facecolor               : 1f1f1c       # Dark background color
-axes.edgecolor               : 582f0e       # Forest brown edge color
-axes.labelcolor              : 582f0e       # Forest brown label color
+axes.edgecolor               : ac9786       # Forest brown edge color
+axes.labelcolor              : ac9786       # Forest brown label color
 axes.spines.top              : False        # Clean, minimal appearance
 axes.spines.right            : False        # Remove unnecessary chart junk
-xtick.color                  : 582f0e       # Forest brown tick color
-ytick.color                  : 582f0e       # Forest brown tick color
+xtick.color                  : ac9786       # Forest brown tick color
+ytick.color                  : ac9786       # Forest brown tick color
 
 # =============================================================================
 # COLOR PALETTE
 # =============================================================================
-axes.prop_cycle              : cycler('color', ['a68a64', 'b6ad90', 'c2c5aa', 'a4ac86', '936639'])
+axes.prop_cycle              : cycler('color', ['bf8c58', 'c9c982', 'bfd5a8', 'ac5f39', 'a47f59'])
 
 # =============================================================================
 # GRID SETTINGS
 # =============================================================================
 axes.grid                    : True         # Enable grid by default
-grid.color                   : 414833       # Dark forest grid color
+grid.color                   : 6b6e5f       # Dark forest grid color
 grid.linestyle               : -            # Solid lines
 grid.linewidth               : 0.5          # Thin, unobtrusive lines
 
@@ -62,8 +62,6 @@ hist.bins                    : sqrt         # Optimal bin calculation for histog
 # =============================================================================
 # SAVE SETTINGS
 # =============================================================================
-savefig.facecolor            : f3f2ed       # Light background for saved figures
-savefig.edgecolor            : f3f2ed       # Light edge color for saved figures
 savefig.format               : png          # High-quality default format
 savefig.dpi                  : 300          # Maximum resolution for saved images
 savefig.transparent          : False        # Solid background by default
