@@ -17,10 +17,6 @@ font.family                  : sans-serif   # Clean, modern font family
 font.sans-serif              : Inter, Helvetica, Arial, sans-serif  # Font stack with fallbacks
 text.color                   : 2a2a2a      # Softer than pure black for better readability
 axes.labelcolor              : 2a2a2a      # Consistent text color for labels
-axes.labelweight             : 500          # Slightly bolder axis labels for hierarchy
-axes.titleweight             : 600          # Bolder titles for clear hierarchy
-axes.labelpad                : 8            # Breathing room between labels and axes
-axes.titlepad                : 15           # More space above titles
 
 # =============================================================================
 # AXES AND SPINES
@@ -50,20 +46,29 @@ axes.grid                    : True         # Enable grid by default
 grid.linestyle               : dashed       # Subtle dashed lines
 grid.linewidth               : 0.5          # Thin, unobtrusive lines
 grid.alpha                   : 0.5          # Semi-transparent for subtlety
+axes.grid.which              : both         # Show both major and minor gridlines
 
 # =============================================================================
 # TICKS
 # =============================================================================
-xtick.major.pad              : 5            # Consistent padding for x-axis ticks
-ytick.major.pad              : 5            # Consistent padding for y-axis ticks
 xtick.color                  : 666666      # Softer tick color
 ytick.color                  : 666666      # Matches grid and edge colors
 
 # =============================================================================
+# LINE SETTINGS
+# =============================================================================
+lines.linewidth              : 2            # Thicker lines for visibility
+
+
+# =============================================================================
 # LEGEND SETTINGS
 # =============================================================================
+legend.frameon               : True         # No frame around legend
+legend.framealpha            : 0.8          # Legend patch transparency
 legend.fancybox              : True         # Rounded legend corners
+legend.loc                   : best         # Optimal legend placement
 legend.columnspacing         : 1.5          # Better spacing in multi-column legends
+
 
 # =============================================================================
 # SPECIALIZED PLOT SETTINGS

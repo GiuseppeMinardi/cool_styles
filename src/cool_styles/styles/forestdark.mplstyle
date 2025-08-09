@@ -27,6 +27,7 @@ axes.spines.top              : False        # Clean, minimal appearance
 axes.spines.right            : False        # Remove unnecessary chart junk
 xtick.color                  : ac9786       # Forest brown tick color
 ytick.color                  : ac9786       # Forest brown tick color
+axes.axisbelow               : True         # Grid lines behind data
 
 # =============================================================================
 # COLOR PALETTE
@@ -40,13 +41,18 @@ axes.grid                    : True         # Enable grid by default
 grid.color                   : 6b6e5f       # Dark forest grid color
 grid.linestyle               : -            # Solid lines
 grid.linewidth               : 0.5          # Thin, unobtrusive lines
+axes.grid.which              : both         # Show both major and minor gridlines
+grid.alpha                   : 0.5          # Semi-transparent gridlines
+
 
 # =============================================================================
 # LEGEND SETTINGS
 # =============================================================================
-legend.frameon               : False        # No frame around legend
+legend.frameon               : True         # Draw legend on background patch
+legend.framealpha            : 0.8          # Legend patch transparency
 legend.fancybox              : True         # Rounded legend corners
-legend.loc                   : best         # Optimal legend placement
+legend.columnspacing         : 1.5          # Better spacing in multi-column legends
+
 
 # =============================================================================
 # LINE SETTINGS

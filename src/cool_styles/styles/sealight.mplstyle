@@ -39,13 +39,17 @@ axes.grid                    : True         # Enable grid by default
 grid.color                   : caf0f8       # Light blue grid color
 grid.linestyle               : -            # Solid grid lines
 grid.linewidth               : 0.5          # Thin, unobtrusive lines
+axes.grid.which              : both         # Show both major and minor gridlines
+grid.alpha                   : 0.5          # Semi-transparent gridlines
 
 # =============================================================================
 # LEGEND SETTINGS
 # =============================================================================
-legend.frameon               : True         # Draw legend on background patch
+legend.frameon               : True         # No frame around legend
+legend.framealpha            : 0.8          # Legend patch transparency
 legend.fancybox              : True         # Rounded legend corners
 legend.loc                   : best         # Optimal legend placement
+legend.columnspacing         : 1.5          # Better spacing in multi-column legends
 
 # =============================================================================
 # LINE SETTINGS
