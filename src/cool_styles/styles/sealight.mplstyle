@@ -13,8 +13,10 @@ figure.constrained_layout.use: True         # Automatic layout optimization
 # =============================================================================
 font.family                  : sans-serif   # Clean, modern font family
 font.sans-serif              : Arial, Helvetica, DejaVu Sans
-font.size                    : 10           # Base font size
+font.size                    : medium       # Base font size
 text.color                   : 023e8a       # Deep blue text color
+axes.titlecolor              : 023e8a
+figure.titleweight           : bold  
 
 # =============================================================================
 # AXES AND SPINES
@@ -36,8 +38,8 @@ axes.prop_cycle              : cycler('color', ['023e8a', '669bbc', '0096c7', '0
 # GRID SETTINGS
 # =============================================================================
 axes.grid                    : True         # Enable grid by default
-grid.color                   : caf0f8       # Light blue grid color
-grid.linestyle               : -            # Solid grid lines
+grid.color                   : 023e8a       # Light blue grid color
+grid.linestyle               : dashed
 grid.linewidth               : 0.5          # Thin, unobtrusive lines
 axes.grid.which              : both         # Show both major and minor gridlines
 grid.alpha                   : 0.5          # Semi-transparent gridlines

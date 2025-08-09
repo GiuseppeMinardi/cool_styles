@@ -14,8 +14,10 @@ figure.facecolor             : f3f2ed       # Light parchment background color
 # =============================================================================
 font.family                  : sans-serif   # Clean, modern font family
 font.sans-serif              : Arial, Helvetica, DejaVu Sans
-font.size                    : 10           # Base font size
+font.size                    : medium       # Base font size
 text.color                   : 333d29       # Forest green text color
+axes.titlecolor              : 333d29
+figure.titleweight           : bold  
 
 # =============================================================================
 # AXES AND SPINES
@@ -40,7 +42,7 @@ axes.prop_cycle              : cycler('color', ['7f4f24', '936639', 'a4ac86', '6
 axes.grid                    : True         # Enable grid by default
 axes.grid.which              : both         # Show both major and minor gridlines
 grid.color                   : d8d8cc       # Light forest grid color
-grid.linestyle               : -            # Solid lines
+grid.linestyle               : dashed
 grid.linewidth               : 0.5          # Thin, unobtrusive lines
 grid.alpha                   : 0.5          # Semi-transparent for subtlety
 

@@ -27,19 +27,35 @@ def contrast_ratio(c1, c2):
 def check_style_legibility(style_name, style_obj, threshold=4.5):
     """Check that text, axis labels, and ticks meet WCAG AA contrast."""
     with plt.style.context(style_obj):
-        style_dict = mpl.rcParams
-        background_color = mpl.colors.to_rgb(style_dict.get("axes.facecolor", "white"))
-
         failures = []
+        style_dict = mpl.rcParams
+        axes_facecolor = mpl.colors.to_rgb(style_dict.get("axes.facecolor", "white"))
+        figure_facecolor = mpl.colors.to_rgb(
+            style_dict.get("figure.facecolor", "white")
+        )
+
         for element_name, rc_key in [
             ("Text", "text.color"),
-            ("Axis labels", "axes.labelcolor"),
-            ("Ticks", "xtick.color"),
         ]:
             foreground_color = mpl.colors.to_rgb(style_dict.get(rc_key, "black"))
 
             # Convert to 0–255 for WCAG math
-            bg_rgb_255 = tuple(int(c * 255) for c in background_color)
+            bg_rgb_255 = tuple(int(c * 255) for c in axes_facecolor)
+            fg_rgb_255 = tuple(int(c * 255) for c in foreground_color)
+
+            cr = contrast_ratio(bg_rgb_255, fg_rgb_255)
+            if cr < threshold:
+                failures.append(f"{element_name} contrast {cr:.2f} below {threshold}")
+
+        for element_name, rc_key in [
+            ("Axis labels", "axes.labelcolor"),
+            ("Ticks", "xtick.color"),
+            ("Axes Title", "axes.titlecolor"),
+        ]:
+            foreground_color = mpl.colors.to_rgb(style_dict.get(rc_key, "black"))
+
+            # Convert to 0–255 for WCAG math
+            bg_rgb_255 = tuple(int(c * 255) for c in figure_facecolor)
             fg_rgb_255 = tuple(int(c * 255) for c in foreground_color)
 
             cr = contrast_ratio(bg_rgb_255, fg_rgb_255)

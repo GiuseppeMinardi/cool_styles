@@ -11,20 +11,22 @@ figure.constrained_layout.use: True         # Automatic layout optimization
 # =============================================================================
 # FONT AND TEXT SETTINGS
 # =============================================================================
-font.size                    : 12.0         # Base font size
-text.color                   : EDF6F9       # Light text color for readability
+font.size                    : medium       # Base font size
+text.color                   : white        # Light text color for readability
+axes.titlecolor              : 2D2A32
+figure.titleweight           : bold  
 
 # =============================================================================
 # AXES AND SPINES
 # =============================================================================
 axes.facecolor               : 2D2A32       # Dark background color
-axes.edgecolor               : EDF6F9       # Light edge color
-axes.labelcolor              : EDF6F9       # Light label color
+axes.edgecolor               : 2D2A32       # Light edge color
+axes.labelcolor              : 2D2A32       # Light label color
 axes.axisbelow               : True         # Grid lines behind data
 axes.spines.top              : False        # Clean, minimal appearance
 axes.spines.right            : False        # Remove unnecessary chart junk
-xtick.color                  : EDF6F9       # Light tick color
-ytick.color                  : EDF6F9       # Light tick color
+xtick.color                  : 2D2A32       # Light tick color
+ytick.color                  : 2D2A32       # Light tick color
 
 # =============================================================================
 # COLOR PALETTE
