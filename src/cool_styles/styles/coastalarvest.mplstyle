@@ -68,7 +68,7 @@ legend.columnspacing         : 1.5          # Better spacing in multi-column leg
 # =============================================================================
 # SPECIALIZED PLOT SETTINGS
 # =============================================================================
-image.cmap                   : viridis      # Default colormap for heatmaps/images
+image.cmap                   : cividis      # Default colormap for heatmaps/images
 hist.bins                    : sqrt         # Optimal bin calculation for histograms
 
 # =============================================================================
