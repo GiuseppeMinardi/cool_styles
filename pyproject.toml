@@ -2,6 +2,9 @@
 name = "cool_styles"
 version = "0.1.0"
 description = "A package contaiing a collection of cool matplotlib styles"
+authors = [
+    {name="Giuseppe Minardi"}
+]
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
