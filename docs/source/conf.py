@@ -14,13 +14,10 @@ def parse_pyproject(root_path: Path):
 
 pyproject_toml = parse_pyproject(root_folder)
 
-project = pyproject_toml.get("name")
+project: str = pyproject_toml.get("name")
 copyright = "2025, Giuseppe Minardi"
 author = ", ".join(
-    [
-        author.get("name", "") for author in
-        pyproject_toml.get("authors", [{}])
-    ]
+    [author.get("name", "") for author in pyproject_toml.get("authors", [{}])]
 )
 release = pyproject_toml.get("version")
 

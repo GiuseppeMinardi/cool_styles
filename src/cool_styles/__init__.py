@@ -1,14 +1,13 @@
-from importlib import resources
 from pathlib import Path
 
 
 def _style_path(name: str) -> Path:
     """Return the absolute Path to a style file inside the package."""
-    return resources.files(__package__) / "styles" / name
+    return Path(__file__).parent.joinpath("styles", name)
 
 available_styles: list[str] = [
     style.stem
-    for style in resources.files(__package__).joipath("styles").iterdir()
+    for style in Path(__file__).parent.joipath("styles").iterdir()
     if style.suffix == ".mplstyle"
 ]
 

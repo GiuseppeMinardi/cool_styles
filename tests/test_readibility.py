@@ -3,6 +3,7 @@ import pytest
 
 import matplotlib as mpl
 import numpy as np
+from matplotlib import colors
 
 
 # --- WCAG luminance and contrast functions ---
@@ -29,15 +30,13 @@ def check_style_legibility(style_name, style_obj, threshold=4.5):
     with plt.style.context(style_obj):
         failures = []
         style_dict = mpl.rcParams
-        axes_facecolor = mpl.colors.to_rgb(style_dict.get("axes.facecolor", "white"))
-        figure_facecolor = mpl.colors.to_rgb(
-            style_dict.get("figure.facecolor", "white")
-        )
+        axes_facecolor = colors.to_rgb(style_dict.get("axes.facecolor", "white"))
+        figure_facecolor = colors.to_rgb(style_dict.get("figure.facecolor", "white"))
 
         for element_name, rc_key in [
             ("Text", "text.color"),
         ]:
-            foreground_color = mpl.colors.to_rgb(style_dict.get(rc_key, "black"))
+            foreground_color = colors.to_rgb(style_dict.get(rc_key, "black"))
 
             # Convert to 0–255 for WCAG math
             bg_rgb_255 = tuple(int(c * 255) for c in axes_facecolor)
@@ -52,7 +51,7 @@ def check_style_legibility(style_name, style_obj, threshold=4.5):
             ("Ticks", "xtick.color"),
             ("Axes Title", "axes.titlecolor"),
         ]:
-            foreground_color = mpl.colors.to_rgb(style_dict.get(rc_key, "black"))
+            foreground_color = colors.to_rgb(style_dict.get(rc_key, "black"))
 
             # Convert to 0–255 for WCAG math
             bg_rgb_255 = tuple(int(c * 255) for c in figure_facecolor)
