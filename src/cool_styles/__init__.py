@@ -7,7 +7,7 @@ def _style_path(name: str) -> Path:
 
 available_styles: list[str] = [
     style.stem
-    for style in Path(__file__).parent.joipath("styles").iterdir()
+    for style in Path(__file__).parent.joinpath("styles").iterdir()
     if style.suffix == ".mplstyle"
 ]
 
