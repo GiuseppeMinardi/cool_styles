@@ -1,6 +1,6 @@
 [project]
 name = "cool_styles"
-version = "0.1.0"
+version = "0.2.0"
 description = "A package contaiing a collection of cool matplotlib styles"
 authors = [
     {name="Giuseppe Minardi"}
