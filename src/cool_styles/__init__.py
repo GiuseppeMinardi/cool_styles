@@ -14,7 +14,6 @@ available_styles: list[str] = [
 
 charcoal: str = _style_path("charcoal.mplstyle").as_posix()
 forestdark: str = _style_path("forestdark.mplstyle").as_posix()
-forestdark2: str = _style_path("forestdark2.mplstyle").as_posix()
 forestlight: str = _style_path("forestlight.mplstyle").as_posix()
 ivorygrid: str = _style_path("ivorygrid.mplstyle").as_posix()
 sealight: str = _style_path("sealight.mplstyle").as_posix()
