@@ -103,3 +103,8 @@ def test_coastalarvest_legibility():
     from cool_styles import coastalarvest
 
     check_style_legibility("coastalarvest", coastalarvest)
+
+def test_goldenpeachy_legibility():
+    from cool_styles import goldenpeachy
+
+    check_style_legibility("coastalarvest", goldenpeachy)

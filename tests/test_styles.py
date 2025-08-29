@@ -189,3 +189,10 @@ def test_coastalarvest_style():
     with plt.style.context(coastalarvest):
         plot_figure(style_label="coastalarvest")
         plt.savefig(img_path.joinpath("coastalarvest.png"))
+
+def test_goldenpeachy_style():
+    from cool_styles import goldenpeachy
+
+    with plt.style.context(goldenpeachy):
+        plot_figure(style_label="goldenpeachy")
+        plt.savefig(img_path.joinpath("goldenpeachy.png"))

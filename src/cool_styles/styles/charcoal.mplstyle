@@ -11,8 +11,6 @@ figure.constrained_layout.use: True         # Automatic layout optimization
 # =============================================================================
 # FONT AND TEXT SETTINGS
 # =============================================================================
-font.family                  : sans-serif   # Clean, modern font family
-font.sans-serif              : Arial, Helvetica, DejaVu Sans
 font.size                    : medium       # Base font size
 text.color                   : black        
 axes.titlecolor              : black 

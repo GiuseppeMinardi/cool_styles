@@ -192,3 +192,13 @@ def test_forestlight_completeness():
         assert_style_completeness("forestlight", forestlight)
     except ImportError:
         pytest.skip("cool_styles.forestlight not available")
+
+
+def test_goldenpeachy_completeness():
+    """Test that goldenpeachy style defines all required rcParams."""
+    try:
+        from cool_styles import goldenpeachy
+
+        assert_style_completeness("goldenpeachy", goldenpeachy)
+    except ImportError:
+        pytest.skip("cool_styles.goldenpeachy not available")

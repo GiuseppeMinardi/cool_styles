@@ -12,8 +12,6 @@ figure.facecolor             : f3f2ed       # Light parchment background color
 # =============================================================================
 # FONT AND TEXT SETTINGS
 # =============================================================================
-font.family                  : sans-serif   # Clean, modern font family
-font.sans-serif              : Arial, Helvetica, DejaVu Sans
 font.size                    : medium       # Base font size
 text.color                   : 333d29       # Forest green text color
 axes.titlecolor              : 333d29

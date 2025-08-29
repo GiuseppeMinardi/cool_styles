@@ -12,9 +12,6 @@ figure.constrained_layout.use: True         # Automatic layout optimization
 # =============================================================================
 # FONT AND TEXT SETTINGS  
 # =============================================================================
-font.size                    : medium       # Base font size
-font.family                  : sans-serif   # Clean, modern font family
-font.sans-serif              : Inter, Helvetica, Arial, sans-serif  # Font stack with fallbacks
 text.color                   : 2a2a2a      # Softer than pure black for better readability
 axes.labelcolor              : 2a2a2a      # Consistent text color for labels
 axes.titlecolor              : 2a2a2a

@@ -12,8 +12,6 @@ figure.facecolor             : 1f1f1c       # Dark background color
 # =============================================================================
 # FONT AND TEXT SETTINGS
 # =============================================================================
-font.family                  : sans-serif   # Clean, modern font family
-font.sans-serif              : Arial, Helvetica, DejaVu Sans
 font.size                    : medium       # Base font size
 text.color                   : c2c5aa       # Forest brown text color
 axes.titlecolor              : c2c5aa

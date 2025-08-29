@@ -20,14 +20,14 @@ plt.style.use(cool_styles.sealight)
 
 # Create your plot
 x = np.linspace(0, 10, 100)
-plt.figure()
-plt.plot(x, np.sin(x), label='Sin(x)')
-plt.plot(x, np.cos(x), label='Cos(x)')
-plt.legend()
-plt.title('Trigonometric Functions')
-plt.xlabel('x')
-plt.ylabel('y')
-plt.show()
+fig, ax = plt.subplots()
+ax.plot(x, np.sin(x), label='Sin(x)')
+ax.plot(x, np.cos(x), label='Cos(x)')
+ax.legend()
+ax.set_title('Trigonometric Functions')
+ax.set_xlabel('x')
+ax.set_ylabel('y')
+fig.show()
 ```
 
 ## Available Styles
@@ -67,6 +67,12 @@ A light woodland-inspired theme with natural earthy tones. Uses a light parchmen
 A dark theme with prominent grid lines and vibrant color accents. The dark background makes the colorful data elements pop while maintaining readability with light text and grid lines. Perfect for complex visualizations where data clarity against a dark background is preferred.
 
 ![Ivory Grid](test_images/ivorygrid.png)
+
+### Golden Peachy
+
+A light theme with warm organce tones. Perfect as a standard theme for your presentations.
+
+![Golden Peachy](test_images/goldenpeachy.png)
 
 ## Features
 
