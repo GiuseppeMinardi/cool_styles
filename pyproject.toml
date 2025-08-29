@@ -2,6 +2,7 @@
 name = "cool_styles"
 version = "0.2.1"
 description = "A package contaiing a collection of cool matplotlib styles"
+
 authors = [
     {name="Giuseppe Minardi"}
 ]
